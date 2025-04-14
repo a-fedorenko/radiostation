@@ -1,0 +1,93 @@
+<div class="wrapper">
+  <div class="playlist_holder">
+    <section class="playlist">
+      <div class="playlist_author">
+        <img class="author_img" src="assets/playlist/00.jpg" alt="">
+        <div>
+          <h2>Currently on Air</h2>
+          <p>The Afternoon Show Greta Rose, Larry Mizell, Jr</p>
+          <span>Six Degrees on the Afternoon Show - Tina Bell</span>
+        </div>
+      </div>
+      <ul class="playlist_list">
+        <li class="playlist_item" *ngFor="let item of list">
+          <img [src]="item.img" alt="">
+          <div class="item_content">
+            <span style="font-size: 16px; margin-bottom: 10px;">{{ item.time }}</span>
+            <span style="font-size: 20px; font-weight: bold; line-height: 20px;">{{ item.title }}</span>
+            <span style="font-size: 20px; margin-bottom: 15px;">{{ item.subtitle }}</span>
+            <span style="font-style: italic; font-size: 14px; font-weight: bold; line-height: 10px;">{{ item.artist }}</span>
+            <span style="text-transform: uppercase; font-size: 14px;">{{ item.album }}</span>
+          </div>
+          <div class="item_desc" style="font-size: 14px;">
+            {{ item.desc }}
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="right_site">
+      <div class="selectors">
+        <div class="wave">
+          Seattle 90.3
+        </div>
+        <form (ngSubmit)="onSubmit()" [formGroup]="form">
+          <ul class="selectors_list">
+            <li class="selectors_item">
+              <select formControlName="month" name="month" id="">
+                <option value="January" [selected]="'January'">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+              </select>
+            </li>
+            <li class="selectors_item">
+              <select formControlName="day" name="day" id="">
+                <option value="08" [selected]="'8'">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+              </select>
+            </li>
+            <li class="selectors_item">
+              <select formControlName="year" name="year" id="">
+                <option value="2025" [selected]="'2025'">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+              </select>
+            </li>
+            <li class="selectors_item">
+              <select formControlName="time" name="time" id="">
+                <option value="9" [selected]="'9'">9:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+              </select>
+            </li>
+            <li class="selectors_item">
+              <select formControlName="pmval" name="pmval" id="">
+                <option value="PM" [selected]="'PM'">PM</option>
+                <option value="AM">AM</option>
+              </select>
+            </li>
+            <li class="selectors_item">
+              <button class="action">Go</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
