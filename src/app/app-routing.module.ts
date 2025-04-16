@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { PlaylistComponent } from './features/playlist/playlist.component';
+import { ScheduleComponent } from './features/schedule/schedule.component';
 
 const routes: Routes = [
   {
@@ -14,17 +15,13 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: '/playlis',
-    component: PlaylistComponent
+    path: 'playlist',
+    component: PlaylistComponent,
   },
-  // {
-  //   path: 'premium',
-  //   component: PremiumComponent
-  // },
-  // {
-  //   path: 'schedule',
-  //   component: ScheduleComponent
-  // }
+  {
+    path: 'schedule',
+    component: ScheduleComponent,
+  },
 ];
 
 @NgModule({
