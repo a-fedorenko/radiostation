@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FooterComponent, HeaderComponent } from './shared/components';
+import { SharedModule } from './shared/shared.module';
+import { ScheduleModule } from './features/schedule/schedule.module';
+import { PlaylistModule } from './features/playlist/playlist.module';
+import { HomeModule } from './features/home/home.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { FooterComponent, HeaderComponent } from './shared/components';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HeaderComponent,
-    FooterComponent
+    SharedModule,
+    ScheduleModule,
+    PlaylistModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

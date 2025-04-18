@@ -7,9 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-schedule',
   templateUrl: './schedule.component.html',
-  styleUrls: ['./schedule.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule],
-  standalone: true
+  styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit {
   form!: FormGroup;

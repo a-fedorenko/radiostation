@@ -2,8 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { StringJoinerPipe } from './string-joiner.pipe';
 
 @Pipe({
-  name: 'creationDate',
-  standalone: true
+  name: 'creationDate'
 })
 export class CreationDatePipe implements PipeTransform {
 

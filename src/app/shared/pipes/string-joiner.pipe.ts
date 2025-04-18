@@ -1,8 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'stringJoiner',
-  standalone: true
+  name: 'stringJoiner'
 })
 export class StringJoinerPipe implements PipeTransform {
 

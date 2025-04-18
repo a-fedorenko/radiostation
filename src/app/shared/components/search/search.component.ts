@@ -1,14 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { ButtonComponent } from '../button/button.component';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss'],
-  imports: [ButtonComponent, FormsModule],
-  standalone: true
+  styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
 

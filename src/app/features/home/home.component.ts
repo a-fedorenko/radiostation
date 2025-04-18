@@ -1,4 +1,3 @@
-import { CommonModule, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -6,17 +5,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  imports: [CommonModule],
-  standalone: true
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // allCourses: Course[];
-  // categories: any[];
-  // comments: any[];s
-  // posts: any[];
-  // selectedСourse: Course;
-  // arrowIcon = faArrowRight;
   list = [
     {
       title: 'Al Music Genre',

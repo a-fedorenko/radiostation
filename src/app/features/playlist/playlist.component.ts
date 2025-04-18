@@ -1,14 +1,11 @@
-import { CommonModule, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
   selector: 'app-playlist',
   templateUrl: './playlist.component.html',
-  styleUrls: ['./playlist.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule],
-  standalone: true
+  styleUrls: ['./playlist.component.scss']
 })
 export class PlaylistComponent implements OnInit {
   form!: FormGroup;

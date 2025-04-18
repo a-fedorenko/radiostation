@@ -4,7 +4,6 @@ import { Component, Input } from '@angular/core';
   selector: 'app-category',
   templateUrl: './category.component.html',
   styleUrls: ['./category.component.scss'],
-  standalone: true
 })
 export class CategoryComponent {
 

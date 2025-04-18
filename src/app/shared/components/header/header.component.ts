@@ -9,9 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  imports: [ButtonComponent, FontAwesomeModule, RouterLink],
-  standalone: true
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   arrow: unknown = faArrowRight;
